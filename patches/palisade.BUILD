@@ -37,7 +37,7 @@ cmake(
         "palisade",
         "palisade/core",
     ],
-    lib_source = ":openfhe_srcs",
+    lib_source = ":palisade_srcs",
     out_include_dir = "include",
     out_shared_libs = [
         "libPALISADEcore.so.1",
@@ -78,7 +78,7 @@ cmake(
         "palisade/core",
         "palisade/pke",
     ],
-    lib_source = ":openfhe_srcs",
+    lib_source = ":palisade_srcs",
     out_include_dir = "include",
     out_shared_libs = [
         "libPALISADEcore.so.1",
@@ -103,7 +103,7 @@ cmake(
         "palisade/binfhe",
         "palisade/core",
     ],
-    lib_source = ":openfhe_srcs",
+    lib_source = ":palisade_srcs",
     out_include_dir = "include",
     out_shared_libs = [
         "libPALISADEbinfhe.so.1",
@@ -115,7 +115,7 @@ cmake(
 # Private rules follow below.
 
 filegroup(
-    name = "openfhe_srcs",
+    name = "palisade_srcs",
     srcs = glob([
         "*",
         "configure/**",

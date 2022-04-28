@@ -22,10 +22,10 @@ rules_foreign_cc_dependencies()
 # Install OpenFHE
 
 new_git_repository(
-    name = "openfhe",
-    build_file = "//patches:openfhe.BUILD",
-    remote="https://gitlab.com/palisade/palisade-development.git",
-    commit = "fded3711c5855e968467e2e73ccf2fcd7948dc7d",
+    name = "palisade",
+    build_file = "//patches:palisade.BUILD",
+    remote="https://gitlab.com/palisade/palisade-release.git",
+    commit = "0860127401ab794591f931fa2c61426c7b56ee2d",
+    shallow_since = "1643411789 +0000",
     init_submodules = True,
-    shallow_since = "1649455211 -0400",
-    )
+)
